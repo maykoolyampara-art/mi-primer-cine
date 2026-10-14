@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner maykool = new Scanner(System.in);
 
         final int FILAS = 5;
         final int COLUMNAS = 5;
@@ -26,7 +26,7 @@ public class Main {
             System.out.println("6. Mostrar boleto");
             System.out.println("7. Salir");
             System.out.print("Seleccione una opcion: ");
-            opcion = sc.nextInt();
+            opcion = maykool.nextInt();
 
             switch (opcion) {
 
@@ -63,10 +63,10 @@ public class Main {
                 case 3:
                     System.out.println("COMPRAR BUTACA");
                     System.out.print("Ingrese la fila (1-5): ");
-                    fila = sc.nextInt();
+                    fila = maykool.nextInt();
 
                     System.out.print("Ingrese la columna (1-5): ");
-                    columna = sc.nextInt();
+                    columna = maykool.nextInt();
 
                     if (fila >= 1 && fila <= FILAS &&
                             columna >= 1 && columna <= COLUMNAS) {
@@ -95,7 +95,7 @@ public class Main {
                     System.out.println("3. Grandes - S/ 16.00");
                     System.out.print("Seleccione el tamano: ");
 
-                    int tipoPalomitas = sc.nextInt();
+                    int tipoPalomitas = maykool.nextInt();
 
                     if (tipoPalomitas >= 1 && tipoPalomitas <= 3
                             && contador < productos.length) {
@@ -119,7 +119,7 @@ public class Main {
                     System.out.println("3. Grande - S/ 8.00");
                     System.out.print("Seleccione el tamano: ");
 
-                    int tipoGaseosa = sc.nextInt();
+                    int tipoGaseosa = maykool.nextInt();
 
                     if (tipoGaseosa >= 1 && tipoGaseosa <= 3
                             && contador < productos.length) {
@@ -169,6 +169,6 @@ public class Main {
 
         } while (opcion != 7);
 
-        sc.close();
+        maykool.close();
     }
 }
